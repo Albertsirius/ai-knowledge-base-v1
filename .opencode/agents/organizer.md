@@ -58,7 +58,7 @@ permission:
 
 ```json
 {
-  "id": "2026-06-19-001",
+  "id": "github-trending-llama3-2026-06-19-001",
   "title": "Llama 3: Open Source LLM",
   "source": "github-trending",
   "source_id": "github-trending-llama3",

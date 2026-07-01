@@ -51,7 +51,7 @@ permission:
       "stars": 1234,
       "topics": ["ai", "llm", "agent"],
       "created_at": "2026-06-19T10:00:00Z"
-  }
+    } 
   ]
 }
 ```
