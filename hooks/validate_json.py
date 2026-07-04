@@ -32,6 +32,7 @@ SCORE_MAX = 10
 
 VALID_STATUSES = {
     "draft",
+    "incomplete",
     "published",
     "archived",
 }
