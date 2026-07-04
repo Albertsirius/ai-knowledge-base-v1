@@ -73,10 +73,10 @@ permission:
 }
 ```
 
-**ID 生成规则**：{YYYY-MM-DD}-{三位序号}，当天内递增。 三位序号从001开始，如果当天已有条目，从最大序号 + 1 开始
+**ID 生成规则**：{source}-{slug}-{YYYY-MM-DD}-{三位序号}，当天内递增。 三位序号从001开始，如果当天已有条目，从最大序号 + 1 开始
 
 ### 第五步：写入文件
-1. 每个知识条目写入独立文件：`knowledge/articles/{YYYY-MM-DD}-{slug}.json`
+1. 每个知识条目写入独立文件：`knowledge/articles/{source}-{slug}-{YYYY-MM-DD}.json`
 
 **Slug生成规则**: 从title生成slug，转为小写，空格替换为连字符（-），移除所有非字母数字和连字符的字符，限制长度不超过50字符。
 
@@ -88,7 +88,7 @@ permission:
   "total_entries": 25,
   "entries": [
     {
-      "id": "2026-06-19-001",
+      "id": "github-trending-llama3-2026-06-19-001",
       "title": "Llama 3: Open Source LLM",
       "file": "2026-06-19-llama-3-open-source-llm.json",
       "source": "github-trending",
@@ -109,7 +109,7 @@ permission:
 - [ ] 综合评分低于5分的条目已过滤
 - [ ] 每个写入的JSON文件格式正确，所有必填字段完整
 - [ ] `index.json` 索引文件已同步更新
-- [ ] 文件命名格式正确：`{YYYY-MM-DD}-{slug}.json`
+- [ ] 文件命名格式正确：`{source}-{slug}-{YYYY-MM-DD}.json`
 - [ ] 所有 `url` 以 `https://` 开头
 
 ## 注意事项
