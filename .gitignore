@@ -4,3 +4,5 @@ package.json
 bun.lock
 knowledge/articles/*
 knowledge/raw/*
+__pycache__
+.env
